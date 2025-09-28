@@ -35,7 +35,6 @@ public class Main {
 
     // Задача 2
     public static void recommendAppVersion(int osType, int deviceYear) {
-        int currentYear = 2024;
 
 
         String osName;
@@ -45,7 +44,7 @@ public class Main {
             osName = "Android";
         }
 
-        if (deviceYear < currentYear) {
+        if (deviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для " + osName + " по ссылке");
         } else {
             System.out.println("Установите версию приложения для " + osName + " по ссылке");
