@@ -53,7 +53,7 @@ public class Main {
         }
     }
 
-    // Задача 3
+    //Задача 3
     public static int calculateDeliveryDays(int deliveryDistance) {
         if (deliveryDistance > 100) {
             return -1; // доставки нет
