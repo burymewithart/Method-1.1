@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Задача 1");
@@ -35,7 +37,7 @@ public class Main {
 
     // Задача 2
     public static void recommendAppVersion(int osType, int deviceYear) {
-
+        int currentYear = LocalDate.now().getYear();
 
         String osName;
         if (osType == 0) {
@@ -44,7 +46,7 @@ public class Main {
             osName = "Android";
         }
 
-        if (deviceYear < 2015) {
+        if (deviceYear < currentYear) {
             System.out.println("Установите облегченную версию приложения для " + osName + " по ссылке");
         } else {
             System.out.println("Установите версию приложения для " + osName + " по ссылке");
